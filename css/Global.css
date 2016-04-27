@@ -1,0 +1,525 @@
+@charset "UTF-8";
+/* ver: 1.1 | 20090303  http://shawphy.com/2009/03/my-own-reset-css.html */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, div, dl, dt, dd, ul,
+ol, li, h1, h2, h3, h4, h5, h6,
+pre, code, form, fieldset,
+legend, input, button, textarea,
+p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+fieldset,
+img {
+  border: 0; }
+
+:focus {
+  outline: 0; }
+
+address, caption, cite, code, dfn, em, strong,
+th, var, optgroup {
+  font-style: normal;
+  font-weight: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+input, button, textarea, select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit; }
+
+code, kbd, samp, tt {
+  font-size: 100%; }
+
+input, button, textarea, select {
+  *font-size: 100%; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th {
+  text-align: left; }
+
+sup, sub {
+  font-size: 100%;
+  vertical-align: baseline; }
+
+:link, :visited, ins {
+  text-decoration: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  line-height: 1.5;
+  font-family: "\5FAE\8F6F\96C5\9ED1","arial narrow" !important; }
+
+body {
+  margin: 0 auto !important;
+  word-wrap: break-word;
+  max-width: 100%;
+  min-width: 320px;
+  height: 100%;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  cursor: default; }
+
+body, html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 10px;
+  height: 100%; }
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0; }
+
+/*输入框reset*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0; }
+
+input[type="number"] {
+  -moz-appearance: textfield; }
+
+/*
+end*/
+@media (min-width: 375px) {
+  html {
+    font-size: 12px; } }
+@media (min-width: 414px) {
+  html {
+    font-size: 13px; } }
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; } }
+/*rem=n/10*/
+/*end*/
+/* 父元素-横向排列（主轴） */
+/* 父元素-横向换行 */
+/* 父元素-水平居中（主轴是横向才生效） */
+/* 子元素-显示在从左向右（从上向下）第1个位置，用于改变源文档顺序显示 */
+/* 子元素-显示在从左向右（从上向下）第2个位置，用于改变源文档顺序显示 */
+@font-face {
+  font-family: 'fontstyle';
+  src: url("../fonts/fontstyle.eot?r48oz6");
+  src: url("../fonts/fontstyle.eot?r48oz6#iefix") format("embedded-opentype"), url("../fonts/fontstyle.ttf?r48oz6") format("truetype"), url("../fonts/fontstyle.woff?r48oz6") format("woff"), url("../fonts/fontstyle.svg?r48oz6#fontstyle") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'tiosdas';
+  src: url("../fonts/tiosdas.eot?csg636");
+  src: url("../fonts/tiosdas.eot?csg636#iefix") format("embedded-opentype"), url("../fonts/tiosdas.ttf?csg636") format("truetype"), url("../fonts/tiosdas.woff?csg636") format("woff"), url("../fonts/tiosdas.svg?csg636#tiosdas") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.icons {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fontstyle' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.tips {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'tiosdas' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+@font-face {
+  font-family: 'oftens';
+  src: url("../fonts/oftens.eot?ey8qcf");
+  src: url("../fonts/oftens.eot?ey8qcf#iefix") format("embedded-opentype"), url("../fonts/oftens.ttf?ey8qcf") format("truetype"), url("../fonts/oftens.woff?ey8qcf") format("woff"), url("../fonts/oftens.svg?ey8qcf#oftens") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.oggs {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'oftens' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.uniE900:before {
+  content: "\e900"; }
+
+.right:before {
+  content: "\e901"; }
+
+.wei:before {
+  content: "\e902"; }
+
+.uniE903:before {
+  content: "\e903"; }
+
+.zoneQQ:before {
+  content: "\e904"; }
+
+.qqzone:before {
+  content: "\e905"; }
+
+.uniE906:before {
+  content: "\e906"; }
+
+.wei-xin:before {
+  content: "\e907"; }
+
+.qq1:before {
+  content: "\e908"; }
+
+.uniE909:before {
+  content: "\e909"; }
+
+.phone-icon:before {
+  content: "\e90a"; }
+
+.imp:before {
+  content: "\e90b"; }
+
+.jian-yi:before {
+  content: "\e90c"; }
+
+.bu-door:before {
+  content: "\e90d"; }
+
+.onto123:before {
+  content: "\e90e"; }
+
+.shopCar:before {
+  content: "\e901"; }
+
+.glass:before {
+  content: "\e900"; }
+
+.up-arrow:after {
+  content: "\e900"; }
+
+.rt-arrow:before {
+  content: "\e901"; }
+
+.zw-box {
+  height: 1.5rem;
+  width: 100%; }
+
+.main {
+  max-width: 640px;
+  min-width: 320px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  position: relative; }
+
+body {
+  background-color: #f0f0f0; }
+
+footer {
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #d9d9d9;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -moz-box;
+  display: -webkit-box;
+  -moz-box-pack: justify;
+  -webkit-box-pack: justify;
+  -o-box-pack: justify;
+  box-pack: justify;
+  text-align: center;
+  padding: 0.25rem 0;
+  border-top: 1px solid #d9d9d9; }
+  footer {
+    *zoom: 1;
+    /*兼容ie6,7*/ }
+  footer:before, footer:after {
+    display: table;
+    content: ""; }
+  footer:after {
+    clear: both;
+    overflow: hidden; }
+  footer > a {
+    -webkit-box-flex: 1;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1;
+    /* Chrome */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    width: 25%;
+    display: block;
+    font-size: 0.32813rem;
+    color: #646464; }
+    footer > a:link, footer > a:active, footer > a:focus, footer > a:hover {
+      outline: 0;
+      border: none;
+      text-decoration: none; }
+    footer > a:before {
+      display: block;
+      content: "";
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+      height: 0.65625rem;
+      margin: 0.0625rem auto; }
+  footer .chk-tabs-1 {
+    color: #8fc534 !important; }
+  footer .chk-tabs-1:before {
+    background-image: url("../imgs/ontom_10.png") !important; }
+  footer .main-info:before {
+    width: 0.60938rem;
+    background-image: url("../imgs/ontom_07.png"); }
+  footer .chk-tabs-2 {
+    color: #8fc534 !important; }
+  footer .chk-tabs-2:before {
+    background-image: url("../imgs/ontom_20.png") !important; }
+  footer .order-info:before {
+    width: 0.51563rem;
+    background-image: url("../imgs/ontom_17.png"); }
+  footer .chk-tabs-3 {
+    color: #8fc534 !important; }
+  footer .chk-tabs-3:before {
+    background-image: url("../imgs/ontom_15.png") !important; }
+  footer .esq-info:before {
+    width: 0.65625rem;
+    background-image: url("../imgs/ontom_12.png"); }
+  footer .chk-tabs-4 {
+    color: #8fc534 !important; }
+  footer .chk-tabs-4:before {
+    background-image: url("../imgs/ontom_05.png") !important; }
+  footer .mine-info:before {
+    width: 0.5625rem;
+    background-image: url("../imgs/ontom_02.png"); }
+
+/*全屏-遮罩层*/
+.model-full {
+  background-color: #646464;
+  z-index: 990;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: .5; }
+
+/*
+end*/
+.hidden {
+  display: none; }
+
+.show {
+  display: block; }
+
+/*
+主题头样式*/
+.subhead {
+  padding: 0.4375rem;
+  background-color: #8fc534;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 10rem;
+  z-index: 1000;
+  text-align: center;
+  font-size: 0.42188rem; }
+  .subhead {
+    *zoom: 1;
+    /*兼容ie6,7*/ }
+  .subhead:before, .subhead:after {
+    display: table;
+    content: ""; }
+  .subhead:after {
+    clear: both;
+    overflow: hidden; }
+  .subhead a {
+    color: #fff; }
+  .subhead > div {
+    font-size: 0.34375rem; }
+  .subhead .sub-left {
+    float: left; }
+    .subhead .sub-left:before {
+      content: "\00AB";
+      display: inline-block;
+      font-size: 0.42188rem; }
+  .subhead .sub-right {
+    float: right; }
+
+/*end*/
+/*订单进度分类状态样式*/
+.status-load {
+  text-align: center;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  background-color: #8fc534;
+  font-size: 0.34375rem;
+  color: #fff;
+  position: relative;
+  z-index: 1000; }
+  .status-load > div {
+    -webkit-box-flex: 1;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1;
+    /* Chrome */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: inline-block;
+    width: 32.33%;
+    padding: 0.1875rem 0; }
+
+/*end*/
+/*
+按钮提示选中样式*/
+.info-chk {
+  border: 1px solid #ec7941 !important;
+  color: #ec7941 !important; }
+
+/*end*/
+/*已发货字体颜色*/
+.font-chk {
+  color: #ec7941 !important; }
+
+/*end*/
+/*
+订单进度分类状态当前选中样式*/
+.load-chk {
+  border-bottom: 0.0625rem solid #ec7941 !important; }
+
+/*end*/
+.same-bg-center:before, .order-undone:before, .order-undo:before, .order-finish:before, .sale-load:before, .sale-finish:before {
+  display: block;
+  content: "";
+  width: 5.15625rem;
+  height: 5.625rem;
+  margin: 0 auto;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+/*
+订单未完成内容样式*/
+.order-undone {
+  padding: 2.65625rem 0 2.09375rem 0; }
+  .order-undone:before {
+    background-image: url("../icons/weiwanc.png"); }
+
+.same-title, .order-undone, .order-undo, .order-finish, .sale-load, .sale-finish {
+  text-align: center; }
+  .same-title h1, .order-undone h1, .order-undo h1, .order-finish h1, .sale-load h1, .sale-finish h1, .same-title h2, .order-undone h2, .order-undo h2, .order-finish h2, .sale-load h2, .sale-finish h2 {
+    padding: 0.125rem; }
+  .same-title h1, .order-undone h1, .order-undo h1, .order-finish h1, .sale-load h1, .sale-finish h1 {
+    font-size: 0.34375rem;
+    color: #6e6e6e; }
+  .same-title h2, .order-undone h2, .order-undo h2, .order-finish h2, .sale-load h2, .sale-finish h2 {
+    font-size: 0.26563rem;
+    color: #a9a9a9; }
+
+/*end*/
+.order-bg-theme {
+  background-color: #fff; }
+
+.order-undo {
+  padding: 2.46875rem 0 2.09375rem 0; }
+  .order-undo:before {
+    background-image: url("../icons/yiquxiao.png"); }
+
+.order-finish {
+  padding: 2.625rem 0 2.09375rem 0; }
+  .order-finish:before {
+    background-image: url("../icons/yiwanc.png"); }
+
+/*
+消息*/
+.message {
+  background: url("../icons/xiaoxi.png") no-repeat;
+  width: 0.5625rem;
+  height: 0.5625rem;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  display: block; }
+
+/*end*/
+/*售后进行中内容样式*/
+.sale-load {
+  padding: 2.625rem 0 1.90625rem 0; }
+  .sale-load:before {
+    background-image: url("../icons/sh-jxz.png"); }
+
+/*end*/
+/*售后已完成内容样式*/
+.sale-finish {
+  padding: 3rem 0 1.9375rem 0; }
+  .sale-finish:before {
+    width: 5.73438rem;
+    height: 3.4375rem; }
+  .sale-finish:before {
+    background-image: url("../icons/sh-ywc.png"); }
+
+/*end*/
+
+/*# sourceMappingURL=Global.css.map */
