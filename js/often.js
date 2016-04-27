@@ -57,7 +57,7 @@ $("#model-full,#close-model").on("tap",function(e){
 
     function orderLists(){
     $.ajax({
-        type:"POST",
+        type:"get",
         url:"order-lists.htm",
         data: "" ,
         success:function(msg){
@@ -72,7 +72,7 @@ $("#model-full,#close-model").on("tap",function(e){
 /*已取消*/
 function orderUndo(){
 $.ajax({
-    type:"POST",
+    type:"get",
     url:"order-undo.htm",
     data: "" ,
     success:function(msg){
@@ -87,7 +87,7 @@ $.ajax({
 /*已完成初始页面*/
 function orderFinish(){
 $.ajax({
-    type:"POST",
+    type:"get",
     url:"order-finish.htm",
     data: "" ,
     success:function(msg){
@@ -103,7 +103,7 @@ $.ajax({
 /*未完成*/
 function orderUndone(){
 $.ajax({
-    type:"POST",
+    type:"get",
     url:"order-undone.htm",
     data: "" ,
     success:function(msg){
@@ -135,7 +135,7 @@ end*/
 //售后-进行中
 function saleLoad(){
     $.ajax({
-        type:"POST",
+        type:"get",
         url:"sale-load.htm",
         data: "" ,
         success:function(msg){
@@ -151,7 +151,7 @@ saleLoad();
 //售后-已完成
 function saleFinish(){
     $.ajax({
-        type:"POST",
+        type:"get",
         url:"sale-finish.htm",
         data: "" ,
         success:function(msg){
